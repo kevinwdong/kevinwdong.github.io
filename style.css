@@ -22,11 +22,17 @@ header {
     width: 90%;
     display: flex;
     flex-direction: row;;
-    justify-content: space-between;
+    justify-content: end;
     margin-top: 5rem;
 }
 
-main {
+.navbaritem {
+    margin-left: 3rem;
+    text-decoration: none;
+    color: white;
+} 
+
+#homemain {
     width: 700px;
     height: 500px;
     display: grid;
@@ -41,61 +47,88 @@ main {
     color: #1e62a5;;
     justify-content: center;
     align-items: center;
-    
-}
-
-.box a {
-    color: #1e62a5;
     text-decoration: none;
 }
 
-.box1 {
+#home1 {
+    background-color: white;
     font-size: 13rem;
     font-weight:800;
     grid-area: 2 / 2 / 4 / 4;
 }
 
-.box1:hover {
-    grid-area: 1 / 1 / 4 / 4;
-    font-size: 20rem;
+#home1:hover {
+     grid-area: 1 / 1 / 4 / 4;
+    font-size: 4rem;
     font-weight:800;
 }
 
-.box2 {
+#home1:hover span {    
+    display: none;
+}
+
+#home1:hover::before {
+    content: "Profile";  
+}
+
+#home2 {
     font-size: 10rem;
     font-weight:800;
     grid-area: 4 / 2 / 6 / 4;
 }
 
-.box2:hover {
+#home2:hover {
     grid-area: 4 / 1 / 7 / 4;
-    font-size: 20rem;
-    font-weight:800;
+    font-size: 4rem;
+    font-weight:800;   
 }
 
-.box3 {
+#home2:hover span {    
+    display: none;
+}
+
+#home2:hover::before {
+    content: "Experience"; 
+}
+
+#home3 {
     font-size: 20rem;
     font-weight:800;
     grid-area: 2 / 4 / 5 / 7;
 }
 
-.box3:hover {
+#home3:hover {
     grid-area: 1 / 4 / 5 / 8;
-    font-size: 30rem;
+    font-size: 5rem;
     font-weight:800;
-
 }
 
-.box4 {
+#home3:hover span {    
+    display: none;
+}
+
+#home3:hover::before {
+    content: "Portfolio"; 
+}
+
+#home4 {
     grid-area: 5 / 4 / 6 / 7;
     font-size: 4rem;
-    font-weight:600;
+    font-weight:800;
 }
 
-.box4:hover {
+#home4:hover {
     grid-area: 5 / 4 / 7 / 8;
-    font-size: 6rem;
-    font-weight:600;
+    font-size: 4rem;
+    font-weight:800;
+}
+
+#home4:hover span {    
+    display: none;
+}
+
+#home4:hover::before {
+    content: "Contact"; 
 }
 
 footer {
@@ -103,14 +136,46 @@ footer {
     text-align: center;
 }
 
-#iconimage {
-    width: 70px;
-    height: 50px;    
+#contactmain {
+    width: 700px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
 }
 
+#contact1 {
+    background-color: white;
+    font-size: 13rem;
+    font-weight:800;
+    grid-area: 1 / 3 / 2 / 4;
+}
 
+#contact2 {
+    background-color: white;
+    font-size: 13rem;
+    font-weight:800;
+    grid-area: 2 / 3 / 3/ 4;
+}
 
+#contact3 {
+    background-color: white;
+    font-size: 13rem;
+    font-weight:800;
+    grid-area: 3 / 3 / 4 / 4;
+}
 
+#contact4 {
+    background-color: white;
+    font-size: 13rem;
+    font-weight:800;
+    grid-area: 4 / 3 / 5 / 4;
+}
 
-
-
+#contact5 {
+    background-color: white;
+    font-size: 13rem;
+    font-weight:800;
+    grid-area: 5 / 3 / 6 / 4;
+}
