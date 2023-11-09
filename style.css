@@ -137,7 +137,7 @@ footer {
 }
 
 #contactmain {
-    width: 700px;
+    width: 500px;
     height: 500px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -145,37 +145,40 @@ footer {
     gap: 1rem;
 }
 
+.contactbox {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    color: #1e62a5;;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 15%;
+}
+
 #contact1 {
     background-color: white;
-    font-size: 13rem;
-    font-weight:800;
     grid-area: 1 / 3 / 2 / 4;
 }
 
 #contact2 {
     background-color: white;
-    font-size: 13rem;
-    font-weight:800;
     grid-area: 2 / 3 / 3/ 4;
 }
 
 #contact3 {
     background-color: white;
-    font-size: 13rem;
-    font-weight:800;
     grid-area: 3 / 3 / 4 / 4;
+    
 }
 
 #contact4 {
     background-color: white;
-    font-size: 13rem;
-    font-weight:800;
     grid-area: 4 / 3 / 5 / 4;
 }
 
 #contact5 {
     background-color: white;
-    font-size: 13rem;
-    font-weight:800;
     grid-area: 5 / 3 / 6 / 4;
 }
