@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT</title>
+    <title>Dice Game</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville&family=Noto+Sans&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dicegame.css">
 </head>
 <body>
     <div class="container">
@@ -15,20 +15,51 @@
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="https://kevinwdong.github.io/index.html">Home</a>
-                <a href="https://kevinwdong.github.io/profile.html">Profile</a>
-                <a href="https://kevinwdong.github.io/experience.html">Experience</a>
+                <a href="https://kevinwdong.github.io/profile.html">Dice Game</a>
+                <a href="https://kevinwdong.github.io/experience.html">Drum Game</a>
                 <a href="https://kevinwdong.github.io/portfolio.html">Portfolio</a>
                 <a href="https://kevinwdong.github.io/contact.html">Contact</a>
               </div>
-              <span class="navIcon" onclick="openNav()">&#9776</span>           
+              <span class="navIcon" onclick="openNav()">&#9776</span>
+              <div id="gameName">
+                <h1>Dice Game</h1>
+            </div>  
+           <div id="selectbox">
+              <label class="inputbox" for="sides">Type of Dice:</label>
+              <br>
+
+               <select class="inputBox" id="diceSides">
+                   <option value=6>Six Sides</option>
+                   <option value=10>Ten Sides</option>
+                 </select>
+           </div>       
         </header>
-        <main>
-           <h1>Here is my profile</h1>  
+        <main>   
+            <div class="item dicebox">
+                <label class="inputbox" for="names">Player One:</label>
+                <br>
+                <input class="inputBox" type="text" name="" id="playerOne">
+                <br>
+                <img class="diceImage" src="diceimages/dice2.png" alt="dice image">
+            </div>           
+            <div class="item dicebox">
+                <label class="inputbox" for="names">Player Two:</label>
+                <br>
+                <input class="inputBox" type="text" name="" id="playerTwo">
+                <br>
+                <img  class="diceImage" src="diceimages/dice4.png" alt="dice image">
+            </div>
+            <div class="item resultbox">
+                <h2 id="gameResult"><p>Good Luck!</p></h2>
+            </div>
+            <div class="item buttonbox">
+                <button id="rollButton" class="button" type="button" onclick="rollingDice()">Roll</button>
+            </div>      
         </main>
         <footer id="footer">
             <p>© Kevin W Dong 2023</p>
         </footer>              
     </div>
-    <script src="index.js"></script>
+    <script src="dicegame.js"></script>
 </body>
 </html>

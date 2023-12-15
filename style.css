@@ -104,7 +104,7 @@ body {
 }
 
 #home1:hover::before {
-    content: "Profile";  
+    content: "Dice Game";  
 }
 
 #home2 {
@@ -124,7 +124,7 @@ body {
 }
 
 #home2:hover::before {
-    content: "Experience"; 
+    content: "Drum Game"; 
 }
 
 #home3 {

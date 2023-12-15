@@ -3,33 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXPERIENCES</title>
+    <title>Drum Game</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville&family=Noto+Sans&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="drumgame.css">
 </head>
 <body>
     <div class="container">
         <header>
+            <h1>Drum Game</h1> 
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="https://kevinwdong.github.io/index.html">Home</a>
-                <a href="https://kevinwdong.github.io/profile.html">Profile</a>
-                <a href="https://kevinwdong.github.io/experience.html">Experience</a>
+                <a href="https://kevinwdong.github.io/profile.html">Dice Game</a>
+                <a href="https://kevinwdong.github.io/experience.html">Drum Game</a>
                 <a href="https://kevinwdong.github.io/portfolio.html">Portfolio</a>
                 <a href="https://kevinwdong.github.io/contact.html">Contact</a>
               </div>
               <span class="navIcon" onclick="openNav()">&#9776</span>           
         </header>
         <main>
-           <h1>HERE ARE MY EXPERIENCES</h1>  
+           <button class="f snare drum">f</button>
+            <button class="d crash drum">d</button>
+            <button class="j tom1 tom drum">j</button>
+            <button class="k tom2 tom drum">k</button>
+            <button class="l tom3 tom drum">l</button>
+            <button class="i tom4 tom drum">i</button>
+            <button class="b kickBass drum">b</button> 
         </main>
         <footer id="footer">
             <p>© Kevin W Dong 2023</p>
         </footer>              
     </div>
 
-    <script src="index.js"></script>
+    <script src="drumgame.js"></script>
 </body>
 </html>
