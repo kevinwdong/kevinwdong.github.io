@@ -3,59 +3,56 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 2rem;
+    margin: 0;
+    color: #DDF2FD;
 }
 
 .navIcon {
     font-size: 30px;
     cursor:pointer;
+    color:  #DDF2FD;
+    position: fixed;
+    top: 50px;
+    right: 75px;
+
 }
 
 .sidenav {
-    height: 100%;
+    height: 400px;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: rgb(85, 132, 225);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 100px;
   }
   
   .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 0px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color:  #DDF2FD;
     display: block;
     transition: 0.3s;
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: black;
   }
   
   .sidenav .closebtn {
     position: absolute;
-    top: 0;
-    right: 25px;
+    top: 50px;
+    right: 20px;
     font-size: 36px;
     margin-right: 50px;
   }
-  
-  #main {
-    transition: margin-right .5s;
-    padding: 16px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-
 
 .container {
     width: 100%;
@@ -64,12 +61,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color:whitesmoke;
+    background-color:rgb(85, 132, 225);
     transition: background-color .5s;
     
 }
 
-#homeMain {
+#main {
     width: 300px;
     height: 400px;
     display: grid;
@@ -81,7 +78,7 @@ body {
 .box {
     display: flex;
     background-color: #DDF2FD;
-    color: #1e62a5;;
+    color: rgb(85, 132, 225);
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -90,12 +87,12 @@ body {
 #home1 {
     font-size: 5rem;
     font-weight:800;
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: 1 / 1 / 2 / 2;
 }
 
 #home1:hover {
      grid-area: 1 / 1 / 2 / 4;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight:800;
 }
 
@@ -110,7 +107,7 @@ body {
 #home2 {
     font-size: 5rem;
     font-weight:800;
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 2 / 1 / 3/ 2;
 }
 
 #home2:hover {
@@ -130,12 +127,12 @@ body {
 #home3 {
     font-size: 5rem;
     font-weight:800;
-    grid-area: 3 / 2 / 4 / 3;
+    grid-area: 3 / 1 / 4 / 2;
 }
 
 #home3:hover {
     grid-area: 3 / 1 / 4 / 4;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight:800;
 }
 
@@ -144,10 +141,10 @@ body {
 }
 
 #home3:hover::before {
-    content: "Portfolio"; 
+    content: "Snake Game"; 
 }
 #home4 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight:800;
     grid-area: 4 / 1 / 5 / 4;
 }
@@ -164,6 +161,7 @@ body {
 footer {
     width: 90%;
     text-align: center;
+    color: #DDF2FD;
 }
 
 @media screen and (min-width:768px) {
@@ -178,10 +176,10 @@ footer {
 .navbaritem {
     margin-left: 3rem;
     text-decoration: none;
-    color: white;
+    color: #DDF2FD;
 } 
 
-#homeMain {
+#main {
     width: 700px;
     height: 500px;
     display: grid;
@@ -192,7 +190,7 @@ footer {
 
 #home1 {
     font-size: 13rem;
-    font-weight:800;
+    font-weight:1000;
     grid-area: 2 / 2 / 4 / 4;
 }
 
@@ -207,19 +205,19 @@ footer {
 }
 
 #home1:hover::before {
-    content: "Profile";  
+    content: "Dice Game";  
 }
 
 #home2 {
     font-size: 10rem;
-    font-weight:800;
+    font-weight:1000;
     grid-area: 4 / 2 / 6 / 4;
 }
 
 #home2:hover {
     grid-area: 4 / 1 / 7 / 4;
     font-size: 4rem;
-    font-weight:800;   
+    font-weight:1000;   
 }
 
 #home2:hover span {    
@@ -227,19 +225,19 @@ footer {
 }
 
 #home2:hover::before {
-    content: "Experience"; 
+    content: "Drum Game"; 
 }
 
 #home3 {
     font-size: 20rem;
-    font-weight:800;
+    font-weight:1000;
     grid-area: 2 / 4 / 5 / 7;
 }
 
 #home3:hover {
     grid-area: 1 / 4 / 5 / 8;
     font-size: 5rem;
-    font-weight:800;
+    font-weight:1000;
 }
 
 #home3:hover span {    
@@ -247,19 +245,19 @@ footer {
 }
 
 #home3:hover::before {
-    content: "Portfolio"; 
+    content: "Snake Game"; 
 }
 
 #home4 {
     grid-area: 5 / 4 / 6 / 7;
     font-size: 4rem;
-    font-weight:800;
+    font-weight:1000;
 }
 
 #home4:hover {
     grid-area: 5 / 4 / 7 / 8;
     font-size: 4rem;
-    font-weight:800;
+    font-weight:1000;
 }
 
 #home4:hover span {    
@@ -283,8 +281,8 @@ footer {
     display: flex;
     width: 70px;
     height: 70px;
-    background-color: white;
-    color: #1e62a5;;
+    background-color: #DDF2FD;
+    color: rgb(85, 132, 225);
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -292,28 +290,28 @@ footer {
 }
 
 #contact1 {
-    background-color: white;
+    background-color: #DDF2FD;
     grid-area: 1 / 3 / 2 / 4;
 }
 
 #contact2 {
-    background-color: white;
+    background-color: #DDF2FD;
     grid-area: 2 / 3 / 3/ 4;
 }
 
 #contact3 {
-    background-color: white;
+    background-color: #DDF2FD;
     grid-area: 3 / 3 / 4 / 4;
     
 }
 
 #contact4 {
-    background-color: white;
+    background-color: #DDF2FD;
     grid-area: 4 / 3 / 5 / 4;
 }
 
 #contact5 {
-    background-color: white;
+    background-color: #DDF2FD;
     grid-area: 5 / 3 / 6 / 4;
 }
 }
